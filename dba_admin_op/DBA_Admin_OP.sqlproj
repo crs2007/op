@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DBA_Admin_OP</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{efe596a3-f02a-44b6-9c86-5869a827ec6d}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DBA_Admin_OP</RootNamespace>
+    <AssemblyName>DBA_Admin_OP</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <Recovery>SIMPLE</Recovery>
+    <PageVerify>CHECKSUM</PageVerify>
+    <Trustworthy>True</Trustworthy>
+    <ServiceBrokerOption>EnableBroker</ServiceBrokerOption>
+    <DacVersion>1.0.0.1</DacVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <SuppressTSqlWarnings>71562,71502</SuppressTSqlWarnings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="SSIS\" />
+    <Folder Include="SSIS\Tables\" />
+    <Folder Include="Server\" />
+    <Folder Include="Server\Tables\" />
+    <Folder Include="Report\" />
+    <Folder Include="Report\Tables\" />
+    <Folder Include="_Admin_\" />
+    <Folder Include="_Admin_\Tables\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="Utility\" />
+    <Folder Include="Utility\Functions\" />
+    <Folder Include="Report\Functions\" />
+    <Folder Include="_Admin_\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="SSIS\Stored Procedures\" />
+    <Folder Include="Server\Stored Procedures\" />
+    <Folder Include="Report\Stored Procedures\" />
+    <Folder Include="_Admin_\Stored Procedures\" />
+    <Folder Include="Assemblies\" />
+    <Folder Include="Security\" />
+    <Folder Include="Schedule\" />
+    <Folder Include="Schedule\Tables\" />
+    <Folder Include="Schedule\Stored Procedures\" />
+    <Folder Include="Service Broker\" />
+    <Folder Include="Utility\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\DTSPackages.sql" />
+    <Build Include="dbo\Tables\CommandLog.sql" />
+    <Build Include="SSIS\Tables\TMP_ReportDetail.sql" />
+    <Build Include="SSIS\Tables\TMP_ReportTotal.sql" />
+    <Build Include="SSIS\Tables\Package.sql" />
+    <Build Include="SSIS\Tables\JobExecuteInfo.sql" />
+    <Build Include="SSIS\Tables\PackageHierarchy.sql" />
+    <Build Include="Server\Tables\LongRunningQuery.sql" />
+    <Build Include="Server\Tables\SessionInfo.sql" />
+    <Build Include="Server\Tables\VM_MemoryOverhead.sql" />
+    <Build Include="Report\Tables\Mail_MailRecipiantProcedure.sql" />
+    <Build Include="Report\Tables\Mail_MailRecipiant.sql" />
+    <Build Include="Report\Tables\Mail_Procedure.sql" />
+    <Build Include="_Admin_\Tables\DriveAlert.sql" />
+    <Build Include="dbo\Functions\ufn_Util_ConvertIntToDateTime.sql" />
+    <Build Include="dbo\Functions\ufn_Util_clr_RegexReplace.sql" />
+    <Build Include="dbo\Functions\ufn_Util_clr_RegexIsMatch.sql" />
+    <Build Include="dbo\Functions\ufn_Util_clr_Format.sql" />
+    <Build Include="dbo\Functions\ufn_get_default_path.sql" />
+    <Build Include="Utility\Functions\ufn_DATEDIFF2String.sql" />
+    <Build Include="Report\Functions\ufn_Mail_GetMailRecipiantByProcedureName.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexReplacex.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexReplaceCodeFormat.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexReplace.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexMatchGroupIndexCaptureCount.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexMatchGroupIndexAt.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexMatchGroupCaptureCount.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexMatchGroupAt.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexMatch.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexIsMatch.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexIndex.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexEscape.sql" />
+    <Build Include="dbo\Functions\ufn_Util_clr_SplitStr.sql" />
+    <Build Include="dbo\Functions\ufn_Util_clr_Split.sql" />
+    <Build Include="dbo\Functions\DirectoryList.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexSplit.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexMatchGroupIndexCaptures.sql" />
+    <Build Include="_Admin_\Functions\ufn_clr_RegexMatchGroupCaptures.sql" />
+    <Build Include="dbo\Functions\make_parallel.sql" />
+    <Build Include="dbo\Functions\GetNums.sql" />
+    <Build Include="dbo\Stored Procedures\usp_WhoIsLocking.sql" />
+    <Build Include="dbo\Stored Procedures\usp_SetOfflineDB.sql" />
+    <Build Include="dbo\Stored Procedures\usp_RestoreDB.sql" />
+    <Build Include="dbo\Stored Procedures\usp_KillUsersOnDB.sql" />
+    <Build Include="dbo\Stored Procedures\usp_HADR_RemoveAllDBFromAG.sql" />
+    <Build Include="dbo\Stored Procedures\usp_FindObject.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DuplicateDB.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteOldBackupFilesByCMD.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteOldBackupFiles.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteDB.sql" />
+    <Build Include="dbo\Stored Procedures\usp_clr_Util_GetErrorEvent.sql" />
+    <Build Include="dbo\Stored Procedures\usp_BackupDB.sql" />
+    <Build Include="dbo\Stored Procedures\sys_GetParameters.sql" />
+    <Build Include="dbo\Stored Procedures\spGetTableFromProcedure.sql" />
+    <Build Include="dbo\Stored Procedures\sp_WhoIsActive.sql" />
+    <Build Include="dbo\Stored Procedures\sp_Blitz.sql" />
+    <Build Include="dbo\Stored Procedures\PrintMax.sql" />
+    <Build Include="dbo\Stored Procedures\ListObjectDependentSSISPackages.sql" />
+    <Build Include="dbo\Stored Procedures\IndexOptimize.sql" />
+    <Build Include="dbo\Stored Procedures\FileRead.sql" />
+    <Build Include="dbo\Stored Procedures\FileDelete.sql" />
+    <Build Include="dbo\Stored Procedures\FileCopy.sql" />
+    <Build Include="dbo\Stored Procedures\DirectoryDeleteContents.sql" />
+    <Build Include="dbo\Stored Procedures\DirectoryDelete.sql" />
+    <Build Include="dbo\Stored Procedures\DirectoryCreate.sql" />
+    <Build Include="dbo\Stored Procedures\DBBruteForce.sql" />
+    <Build Include="dbo\Stored Procedures\DatabaseIntegrityCheck.sql" />
+    <Build Include="dbo\Stored Procedures\DatabaseBackup.sql" />
+    <Build Include="dbo\Stored Procedures\CommandExecute.sql" />
+    <Build Include="SSIS\Stored Procedures\usp_GetLogSSIS.sql" />
+    <Build Include="SSIS\Stored Procedures\usp_AnalizeLastRun.sql" />
+    <Build Include="SSIS\Stored Procedures\ups_GetJobExecuteInfo.sql" />
+    <Build Include="Server\Stored Procedures\usp_Shipping_SetEnvironment.sql" />
+    <Build Include="Server\Stored Procedures\usp_GetLongRunningTranInfo.sql" />
+    <Build Include="Server\Stored Procedures\usp_GetSessionInfo.sql" />
+    <Build Include="Server\Stored Procedures\usp_App_GetOrphanedSQLFile.sql" />
+    <Build Include="Server\Stored Procedures\usp_App_RunCheck.sql" />
+    <Build Include="Report\Stored Procedures\usp_SetMaxDegreeOfParallelism.sql" />
+    <Build Include="Report\Stored Procedures\usp_GetActiveReplicas.sql" />
+    <Build Include="Report\Stored Procedures\usp_General_GetActiveJobLongRun.sql" />
+    <Build Include="Report\Stored Procedures\usp_GetLongRunningSessionInfo.sql" />
+    <Build Include="Report\Stored Procedures\usp_GetLongRunningTranInfo.sql" />
+    <Build Include="_Admin_\Stored Procedures\usp_clr_GetSPParameterTypeByDotNet.sql" />
+    <Build Include="_Admin_\Stored Procedures\usp_clr_GetParameterTable.sql" />
+    <Build Include="_Admin_\Stored Procedures\usp_clr_ExecuteByDotNet.sql" />
+    <Build Include="_Admin_\Stored Procedures\usp_clr_CleanBuffer.sql" />
+    <Build Include="_Admin_\Stored Procedures\usp_clr_GetServerPrincipals.sql" />
+    <Build Include="_Admin_\Stored Procedures\usp_CopyLogin.sql" />
+    <Build Include="_Admin_\Stored Procedures\usp_CleanOldData.sql" />
+    <Build Include="_Admin_\Stored Procedures\usp_SetVolumeAlert.sql" />
+    <Build Include="_Admin_\Stored Procedures\usp_GetJobStatus.sql" />
+    <Build Include="_Admin_\Stored Procedures\usp_GetMPLogs.sql" />
+    <Build Include="dbo\Functions\ufn_Util_clr_ConcToVarbinary.sql" />
+    <Build Include="dbo\Functions\ufn_Util_clr_Conc.sql" />
+    <Build Include="Security\Utility.sql" />
+    <Build Include="Security\SSIS.sql" />
+    <Build Include="Security\Server.sql" />
+    <Build Include="Security\Report.sql" />
+    <Build Include="Security\_Admin_.sql" />
+    <Build Include="Utility\Functions\WordRepeatedNumTimes.sql" />
+    <Build Include="dbo\Stored Procedures\uspGetScheduleTimes_1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_SSRS_GetSubscriptionList.sql" />
+    <Build Include="dbo\Stored Procedures\usp_SetTempDBFileToSameSize.sql" />
+    <Build Include="dbo\Stored Procedures\usp_HADR_ReportServerSubscriptionManager.sql" />
+    <Build Include="_Admin_\Stored Procedures\usp_CopyMaintenancePlan.sql" />
+    <Build Include="Schedule\Tables\Schedule_Configuration.sql" />
+    <Build Include="Schedule\Tables\Schedule_cl_ConfigurationMailListScheduleTask.sql" />
+    <Build Include="Schedule\Tables\Schedule_ConfigurationMailList.sql" />
+    <Build Include="Schedule\Tables\Log_ScheduleTaskLog.sql" />
+    <Build Include="dbo\Stored Procedures\usp_clr_GetServerPrincipals.sql" />
+    <Build Include="dbo\Stored Procedures\CPUSIMPLE.sql" />
+    <Build Include="Schedule\Stored Procedures\usp_GetStatusMailDaily.sql" />
+    <Build Include="Schedule\Stored Procedures\usp_ScheduleTask_RunJob.sql" />
+    <Build Include="Schedule\Stored Procedures\usp_ScheduleTask_ExecAll.sql" />
+    <Build Include="Schedule\Stored Procedures\usp_RequestQueueActivation.sql" />
+    <Build Include="Schedule\Stored Procedures\usp_ProcessingQueueActivation.sql" />
+    <Build Include="Schedule\Stored Procedures\usp_SendBrokerMessage.sql" />
+    <Build Include="Service Broker\JobContract.sql" />
+    <Build Include="Service Broker\JobRequest.sql" />
+    <Build Include="Service Broker\JobRequestQueue.sql" />
+    <Build Include="Service Broker\JobProcessingQueue.sql" />
+    <Build Include="Security\Schedule.sql" />
+    <Build Include="Service Broker\JobRequestService.sql" />
+    <Build Include="Service Broker\JobProcessingService.sql" />
+    <Build Include="Utility\Stored Procedures\usp_PerformanceTuning_SetQureTrace.sql" />
+    <Build Include="dbo\Stored Procedures\usp_HADR_AddDB2AvailabilityGroup.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assemblies\SP_execute.dll" />
+    <None Include="Assemblies\FileSystemHelper.dll" />
+    <None Include="Assemblies\Customs_Util.dll" />
+    <None Include="Assemblies\clrEventViewer.dll" />
+    <None Include="Assemblies\CLR_Util.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="SP_execute">
+      <HintPath>Assemblies\SP_execute.dll</HintPath>
+      <SqlAssemblyName>SP_execute</SqlAssemblyName>
+      <IsModelAware>True</IsModelAware>
+      <GenerateSqlClrDdl>False</GenerateSqlClrDdl>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+    </Reference>
+    <Reference Include="FileSystemHelper">
+      <HintPath>Assemblies\FileSystemHelper.dll</HintPath>
+      <SqlAssemblyName>FileSystemHelper</SqlAssemblyName>
+      <IsModelAware>True</IsModelAware>
+      <GenerateSqlClrDdl>False</GenerateSqlClrDdl>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <SqlPermissionSet>EXTERNAL_ACCESS</SqlPermissionSet>
+    </Reference>
+    <Reference Include="Customs_Util">
+      <HintPath>Assemblies\Customs_Util.dll</HintPath>
+      <SqlAssemblyName>Customs_Util</SqlAssemblyName>
+      <IsModelAware>True</IsModelAware>
+      <GenerateSqlClrDdl>False</GenerateSqlClrDdl>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <SqlPermissionSet>EXTERNAL_ACCESS</SqlPermissionSet>
+    </Reference>
+    <Reference Include="clrEventViewer">
+      <HintPath>Assemblies\clrEventViewer.dll</HintPath>
+      <SqlAssemblyName>clrEventViewer</SqlAssemblyName>
+      <IsModelAware>True</IsModelAware>
+      <GenerateSqlClrDdl>False</GenerateSqlClrDdl>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+    </Reference>
+    <Reference Include="CLR_Util">
+      <HintPath>Assemblies\CLR_Util.dll</HintPath>
+      <SqlAssemblyName>CLR_Util</SqlAssemblyName>
+      <IsModelAware>True</IsModelAware>
+      <GenerateSqlClrDdl>False</GenerateSqlClrDdl>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+    </Reference>
+  </ItemGroup>
+</Project>

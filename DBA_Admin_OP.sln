@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBA_Admin_OP", "DBA_Admin_OP\DBA_Admin_OP.sqlproj", "{EFE596A3-F02A-44B6-9C86-5869A827EC6D}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Partition", "Partition\Partition.sqlproj", "{DA90F404-7165-425D-ABEA-25FBC48FF5E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFE596A3-F02A-44B6-9C86-5869A827EC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE596A3-F02A-44B6-9C86-5869A827EC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE596A3-F02A-44B6-9C86-5869A827EC6D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EFE596A3-F02A-44B6-9C86-5869A827EC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE596A3-F02A-44B6-9C86-5869A827EC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFE596A3-F02A-44B6-9C86-5869A827EC6D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DA90F404-7165-425D-ABEA-25FBC48FF5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA90F404-7165-425D-ABEA-25FBC48FF5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA90F404-7165-425D-ABEA-25FBC48FF5E1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DA90F404-7165-425D-ABEA-25FBC48FF5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA90F404-7165-425D-ABEA-25FBC48FF5E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA90F404-7165-425D-ABEA-25FBC48FF5E1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

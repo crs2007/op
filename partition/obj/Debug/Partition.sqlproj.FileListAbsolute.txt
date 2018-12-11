@@ -1,0 +1,14 @@
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\Partition\bin\Debug\Partition.dacpac
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\Partition\bin\Debug\Partition.dll
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\Partition\bin\Debug\Partition.pdb
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\Partition\obj\Debug\Partition.dll
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\Partition\obj\Debug\Partition.pdb
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\Partition\bin\Debug\Partition.dacpac
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\Partition\bin\Debug\Partition.dll
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\Partition\bin\Debug\Partition.pdb
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\Partition\obj\Debug\Model.xml
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\Partition\obj\Debug\refactor.xml
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\Partition\obj\Debug\postdeploy.sql
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\Partition\obj\Debug\predeploy.sql
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\Partition\obj\Debug\Partition.dll
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\Partition\obj\Debug\Partition.pdb

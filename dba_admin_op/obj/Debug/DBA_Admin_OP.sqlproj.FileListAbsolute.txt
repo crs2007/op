@@ -1,0 +1,23 @@
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\DBA_Admin_OP\bin\Debug\DBA_Admin_OP.dacpac
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\DBA_Admin_OP.sqlprojResolveAssemblyReference.cache
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\Model.xml
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\refactor.xml
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\postdeploy.sql
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\predeploy.sql
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\DBA_Admin_OP.dll
+D:\Visual Studio 2012\Projects\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\DBA_Admin_OP.pdb
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\bin\Debug\DBA_Admin_OP.dacpac
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\bin\Debug\DBA_Admin_OP.dll
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\bin\Debug\DBA_Admin_OP.pdb
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\bin\Debug\clrEventViewer.dll
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\bin\Debug\CLR_Util.dll
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\bin\Debug\Customs_Util.dll
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\bin\Debug\FileSystemHelper.dll
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\bin\Debug\SP_execute.dll
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\DBA_Admin_OP.sqlprojResolveAssemblyReference.cache
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\Model.xml
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\refactor.xml
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\postdeploy.sql
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\predeploy.sql
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\DBA_Admin_OP.dll
+C:\Users\sharonr\Dropbox\DBA_Admin_OP\DBA_Admin_OP\obj\Debug\DBA_Admin_OP.pdb
